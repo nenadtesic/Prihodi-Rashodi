@@ -1,4 +1,5 @@
 import React from 'react';
+import calculatePercent from './calculatePercent';
 
 const Stanje = ({prihodi, rashodi}) => {
 
@@ -8,10 +9,11 @@ const Stanje = ({prihodi, rashodi}) => {
     
     return (
         <div>
-            <h1>Dostupan budzet:</h1>
-            <p>Ukupno: {ukupno}</p>
+            <h1>Stanje:</h1>
+            <p>Dostupan budžet: {ukupno}</p>
             <p>Prihodi: <span>{ukupnoPrihodi}</span></p>
             <p>Rashodi: <span>{ukupnoRashodi}</span></p>
+            <p>Procenat: {calculatePercent(ukupnoRashodi, prihodi)}% </p>
         </div>
     );
 };

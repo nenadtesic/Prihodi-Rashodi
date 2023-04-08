@@ -29,7 +29,6 @@ const Forma = ({ setPrihodi, setRashodi }) => {
             <input value={opis} placeholder='Opis' onChange={e => {setOpis(e.target.value)}}/>
             <input value={iznos} type='number' placeholder='Iznos' onChange={e => {setIznos(Number(e.target.value))}}/>
             <input type="submit" value="Dodaj" />
-            {/* <button type="submit" value="Dodaj">Dodaj</button> */}
         </form>
     );
 };
